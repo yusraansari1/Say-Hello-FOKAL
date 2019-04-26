@@ -1,0 +1,38 @@
+.fnt {
+	font-size: 18px;
+}
+body {
+	padding-left: 25%;
+	padding-right: 25%;
+	 background-repeat: no-repeat, repeat;
+     background-image: url("images/backgr.jpg"), url("images/backgro.svg");
+     background-blend-mode: lighten;
+}
+.midd {
+	margin-top: 19px;
+	padding-top:  19px;
+	padding-left: 19px;
+	margin-left: 19px;
+	padding-bottom: 19px;
+	margin-right: 19px;
+	padding-right: 19px;
+	margin-bottom: 19px;
+}
+#rcorners1 {
+  border-radius: 25px;
+  background: #FFFFFF;
+  padding: 20px; 
+  width: 400px;
+  height: 680px; 
+}
+.buttn {
+	padding-left: 63px !important;
+}
+#rcorners2 {
+  border-radius: 21px;
+  align-self: center !important;
+  padding-left: 31px;
+  padding-right: 41px;
+  padding-bottom: 10px;
+  padding-top: 10px; 
+ }
