@@ -1,85 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<title>FOKAL</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="animate.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="fkl.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script> 
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
 </head>
-<body>
-<div class="container">
-		<div class="wrap-contact100">
-			<div id="rcorners1" class="white midd">
-				<span class="container">
-			<form class="contact100-form validate-form">
-				<span class="contact100-form-title">
-					<h2 class="center-align"><strong>Say Hello!</strong></h2>
-				</span>
+<body class="back color">
+    <div class="container">
+    <div class="row">
+        <div class="col s12 m8 l7 offset-l3 offset-m2 white color">
+            <div class="container">     
+                
+        <h4 class="center-align"><b>Say Hello!</b>
+        </h4>
+                <form action="https://www.tutorialspoint.com/new.php">
+                <div class="section"></div>
+            <div class="input-field fields">
+            <input placeholder="Enter your name" id="first_name" type="text" class="validate" onfocus="this.placeholder=''" onblur="this.placeholder='Enter your name'" required>
+          <label for="first_name">Your Name</label>
+            </div><div class="input-field fields">
+            <input placeholder="Enter your email" id="email" type="email" class="validate" onfocus="this.placeholder=''" onblur="this.placeholder='Enter your email'" required>
+          <label for="email">Email</label>
+            </div>
+            
+          <div class="input-field fields">
+            <select>
+                <option value="1" selected>Choose Services</option>
+                <option value="2">Online Store</option>
+                <option value="3">eCommerce Business</option>
+                <option value="4">UI/UX Design</option>
+                <option value="4">Online Services</option>
 
-				<div class="wrap-input100 validate-input" data-validate="Name is required">
-					<span class="label-input100">Your Name</span><br/>
-					<input class="input100" type="text" name="name" placeholder="Enter your name">
-					<span class="focus-input100"></span>
-				</div>
-                <br/>
-				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-					<span class="label-input100">Email</span><br/>
-					<input class="input100" type="text" name="email" placeholder="Enter your email addess">
-					<span class="focus-input100"></span>
-				</div>
-                <br/>
-			
-					<span>Needed Services</span>
-					<div>
-						<select class="browser-default fnt" name="service">
-							<option value=""><strong>Choose Services</strong></option>
-							<option value="1"><strong>Online Store</strong></option>
-							<option value="2"><strong>eCommerce Bussiness</strong></option>
-							<option value="3"><strong>UI/UX Design</strong></option>
-							<option value="4"><strong>Online Services</strong></option>
-						</select>
-					</div>
-					<span></span>
-				
-                <br/>
-				<div>
-					<span>Budget</span>
-					<div>
-						<select class="browser-default fnt" name="budget">
-							<option value="">Select Budget</option>
-							<option value="1">1500 $</option>
-							<option value="2">2000 $</option>
-							<option value="4">2500 $</option>
-						</select>
-					</div>
-					<span></span>
-				</div>
-                <br/>
-				<div class="wrap-input100 validate-input" data-validate = "Message is required">
-					<span class="label-input100">Message</span><br/>
-					<textarea class="input100" name="message" placeholder="Your message here..."></textarea>
-					<span class="focus-input100"></span>
-				</div>
-                <br/>
-				<div class="container-contact100-form-btn buttn">
-					<div  class="wrap-contact100-form-btn buttn">
-						<div class="contact100-form-bgbtn"></div>
-						<button id="rcorners2" class="purple lighten-2 contact100-form-btn">
-							<span class="center center-align">
-								Submit
-								<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
-							</span>
-						</button>
-					</div>
-				</div>
-			</form>
-		</span>
-		</div>
-		</div>
-	</div>
+            </select>
+            <label class="black-text">Needed Services</label>
+          </div>
+            <div class="input-field fields">
+            <select>
+                <option value="1" selected>Select Budget</option>
+                <option value="2">1500 $</option>
+                <option value="3">2000 $</option>
+                <option value="4">2500 $</option>
+            </select>
+            <label class="black-text">Budget</label>
+          </div>
+            <div class="input-field fields">
+          <textarea id="textarea1" class="materialize-textarea textareaa" placeholder="Your message here" onfocus="this.placeholder=''" onblur="this.placeholder='Your message here'" required></textarea>
+          <label for="textarea1">Message</label>
+        </div>   
+            
+          <button class="btn button_field center-align waves-effect waves-light sub_btn ksb btn-large" type="submit" name="action"><div class="inner_block"> Submit<i class="material-icons right myIcon">trending_flat</i></div>
+          </button>
+            </form>
+        </div>
+        </div>
+    </div>
+    </div>
+    <script>
+         $(document).ready(function() {
+            $('select').material_select();
+         });
+      </script>
+</body>
 </html>
